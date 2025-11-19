@@ -78,6 +78,17 @@ p {
   overflow: hidden;
 }
 
+footer{
+ background-color: black;
+ padding: 15px 0;
+ margin-top: auto;
+ text-align: center;
+ color: white;
+ font-size: 15px;
+ width: 100%;
+
+}
+
 #todo-list li {
   display: flex;
   align-items: center;
@@ -181,4 +192,46 @@ p {
   #todo-list {
     width: 300px;
   }
+}
+
+.datetime-popup {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  background: #4e54c8;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+.datetime-popup label {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.datetime-popup input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #01115c;
+  font-size: 0.9rem;
+}
+
+#save-datetime {
+  background: #4e54c8;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+#save-datetime:hover {
+  background: #8f94fb;
 }

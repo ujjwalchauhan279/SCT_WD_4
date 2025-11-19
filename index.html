@@ -15,11 +15,22 @@
         <input type="text" id="todo-input" placeholder="Enter a Task" />
         <input type="datetime-local" id="todo-datetime" />
         <span id="calendar-icon">📅</span>
+        <div id="datetime-popup" class="datetime-popup">
+            <label>Select Date</label>
+            <input type="date" id="popup-date">
+            <label>Select Time</label>
+            <input type="time" id="popup-time">
+            <button id="save-datetime">Save</button>
+        </div>
     </div>
-
+    
     <button id="add-btn">Add</button>
 
     <ul id="todo-list"></ul>
+
+    <footer class="footer">
+        <span>designed by @ujjwalchauhan279.</span>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
