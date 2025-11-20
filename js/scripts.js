@@ -118,15 +118,11 @@ input.addEventListener('keydown', (e) => {
     if (e.key == 'Enter') addTodo();
 });
 
-// -------------------------------
-// NEW POPUP DATE-TIME FEATURE
-// -------------------------------
 calendarIcon.addEventListener("click", (e) => {
     e.stopPropagation();
     popup.style.display = popup.style.display === "flex" ? "none" : "flex";
 });
 
-// Save selected date & time from popup
 saveDT.addEventListener("click", () => {
     if (dateTimeInput) {
         dateTimeInput.value = popupDate.value + "T" + popupTime.value;
@@ -134,13 +130,10 @@ saveDT.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-// Close popup when clicking elsewhere
 document.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-// Prevent popup from closing when clicking inside it
 popup.addEventListener("click", (e) => e.stopPropagation());
 
-// Initial render
 render();

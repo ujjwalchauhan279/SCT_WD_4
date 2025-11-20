@@ -18,7 +18,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  color: #ff4b5c;
+  color: #6d7f93;
   margin-bottom: 10px;
   letter-spacing: 1px;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -26,8 +26,14 @@ h1 {
 
 p {
   color: #e0e0e0;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   font-size: 1rem;
+  text-align: center;
+}
+
+.p1{
+  margin-bottom: 25px;
+  color: #ff4b5c;;
 }
 
 #todo-input {
